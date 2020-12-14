@@ -28,11 +28,37 @@
                 font-size: 20vw;
                 line-height: 1;
             }
+
+            button {
+                appearance: none;
+                -webkit-appearance: none;
+                background: transparent;
+                border: 1px solid #999;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: inherit;
+            }
+
+            button:hover,
+            button:focus {
+                background-color: #eee;
+            }
         </style>
     </head>
     <body>
         <section>
             <div>’</div>
+            <button hidden>copy</button>
         </section>
+        <script>
+            const button = document.querySelector('button');
+            if (window.navigator.clipboard) {
+                button.addEventListener('click', () => window.navigator.clipboard.writeText('’'));
+                button.hidden = false;
+            } else {
+                button.remove();
+            }
+        </script>
     </body>
 </html>
