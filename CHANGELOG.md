@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/teodragovic/curly-quote/compare/v1.1.0...v1.2.0) (2021-01-20)
+
+
+### Features
+
+* add about section ([#8](https://github.com/teodragovic/curly-quote/issues/8)) ([bac9b65](https://github.com/teodragovic/curly-quote/commit/bac9b6507203b4bddfaef47cebf1fd1b4030e8ce))
+
 ## [1.1.0](https://github.com/teodragovic/curly-quote/compare/v1.0.0...v1.1.0) (2021-01-11)
 
 
