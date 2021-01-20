@@ -29,6 +29,7 @@
             }
 
             body {
+                padding: 20px;
                 display: flex;
                 flex-direction: column;
                 height: 100%;
@@ -43,8 +44,9 @@
                 text-align: center;
             }
 
-            div {
-                font-size: 20vw;
+            .char {
+                font-family: Georgia, Times, serif;
+                font-size: 30vw;
                 line-height: 1;
             }
 
@@ -63,13 +65,70 @@
             button:focus {
                 background-color: #eee;
             }
+
+            header {
+                text-align: right;
+            }
+
+            article {
+                padding: 20px;
+                background: white;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transform: translateX(100%);
+            }
+
+            article:target {
+                transform: none;
+            }
+
+            article header { margin-bottom: 20vw; }
+
+            article div {
+                max-width: 55ch;
+                margin: 0 auto;
+            }
+
+            p {
+                font-family: Georgia, Times, serif;
+                font-size: 18px;
+                margin-bottom: 1em;
+                line-height: 1.3;
+            }
+
+            a {
+                color: #663399;
+            }
+
+            a:hover,
+            a:focus {
+                color: #393399;
+            }
         </style>
     </head>
     <body>
+        <header>
+            <a href="#about">about</a>
+        </header>
         <section>
-            <div>’</div>
+            <div class="char">’</div>
             <button hidden>copy</button>
         </section>
+        <article id="about">
+            <header>
+                <a href="#">close</a>
+            </header>
+            <div>
+                <p>Curly quotes should be used when writing text that requires quotation marks. Only exceptions are expressing lenght units (foot and inch) or programming.</p>
+
+                <p>Since curly quote is not easily available via keyboard I made this little website to make it easier to grab.</p>
+
+                <p>See <a href="https://practicaltypography.com/straight-and-curly-quotes.html" rel="noopener noreferrer">Butterkick’s Practical Typography</a> for more information.</p>
+            </div>
+        </article>
         <script>
             const button = document.querySelector('button');
             if (window.navigator.clipboard) {
