@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/teodragovic/curly-quote/compare/v1.2.0...v1.2.1) (2021-09-11)
+
+
+### Bug Fixes
+
+* hide vertical scroll ([53b5b67](https://github.com/teodragovic/curly-quote/commit/53b5b67afbc7b55b16f7217e11d609c16e238775))
+* remove horizontal scroll on mobile ([e2a5ecf](https://github.com/teodragovic/curly-quote/commit/e2a5ecf30922c50b4945844802672afd80b39b72))
+
 ## [1.2.0](https://github.com/teodragovic/curly-quote/compare/v1.1.0...v1.2.0) (2021-01-20)
 
 

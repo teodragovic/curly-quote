@@ -1,9 +1,9 @@
 {
   "name": "curly-quote",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "scripts": {
     "start": "npx browser-sync . -w",
-    "release":  "npx standard-version && git push --follow-tags",
+    "release": "npx standard-version && git push --follow-tags",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
