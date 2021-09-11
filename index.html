@@ -20,11 +20,11 @@
                 padding: 0;
             }
 
-            html {
+            html, body {
                 height: 100%;
             }
 
-            body {
+            main {
                 padding: 20px;
                 display: flex;
                 flex-direction: column;
@@ -34,6 +34,7 @@
                     Roboto,
                     sans-serif;
                 overflow-x: hidden;
+                position: relative;
             }
 
             section {
@@ -107,25 +108,27 @@
         </style>
     </head>
     <body>
-        <header>
-            <a href="#about">about</a>
-        </header>
-        <section>
-            <div class="char">’</div>
-            <button hidden>copy</button>
-        </section>
-        <article id="about">
+        <main>
             <header>
-                <a href="#">close</a>
+                <a href="#about">about</a>
             </header>
-            <div>
-                <p>Curly quotes should be used when writing text that requires quotation marks. Only exceptions are expressing lenght units (foot and inch) or programming.</p>
+            <section>
+                <div class="char">’</div>
+                <button hidden>copy</button>
+            </section>
+            <article id="about">
+                <header>
+                    <a href="#">close</a>
+                </header>
+                <div>
+                    <p>Curly quotes should be used when writing text that requires quotation marks. Only exceptions are expressing lenght units (foot and inch) or programming.</p>
 
-                <p>Since curly quote is not easily available via keyboard I made this little website to make it easier to grab.</p>
+                    <p>Since curly quote is not easily available via keyboard I made this little website to make it easier to grab.</p>
 
-                <p>See <a href="https://practicaltypography.com/straight-and-curly-quotes.html" rel="noopener noreferrer">Butterkick’s Practical Typography</a> for more information.</p>
-            </div>
-        </article>
+                    <p>See <a href="https://practicaltypography.com/straight-and-curly-quotes.html" rel="noopener noreferrer">Butterkick’s Practical Typography</a> for more information.</p>
+                </div>
+            </article>
+        </main>
         <script>
             const button = document.querySelector('button');
             if (window.navigator.clipboard) {
